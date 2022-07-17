@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em, rem, vh and vw units + Responsive design </title>
+    <style>
+        html{
+            font-size: 15px;
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            border: 2px solid red;
+            /* Number represents the percentage of height occupied by container  */
+            height: 100vh;
+            /* Number represents the percentage of width occupied by container  */
+
+            width: 100vw;
+            /* height: 400px; */
+            /* width: 400px; */
+        }
+        #pahla{
+            /* font-size: 3em; */
+            /* i.e 3 times of parent size  */
+            /* padding: 3em; */
+            /* padding will be 3 times of the updated font sixe */
+        }
+        #doosra{
+            /* font-size: 3rem; */
+            /* i.e 3 times of parent size  */
+            /* padding: 3rem; */
+            /* padding will be 3 times of the html font sixe */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="pahla">first heading</h1>
+        <h1 id="doosra">second heading</h1>
+        <h1 id="teesra">third heading</h1>
+    </div>
+</body>
+</html>

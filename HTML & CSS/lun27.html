@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Spline+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+        margin: 0;
+        padding: 0;
+       
+    }
+
+header::before{
+    background: url('https://cdn.pixabay.com/photo/2016/03/27/21/37/angel-1284369_960_720.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    opacity: 0.65;
+
+}
+    section{
+        height: 255px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+      
+       margin: 5px 300px;
+        align-items: center;
+        font-family: 'Bebas Neue', cursive;
+    }
+    section::before{
+        /* content: ""; */
+    }
+    .navigation{
+        font-size: 15px;
+        display: flex;
+        margin: -10px;
+    }
+    li{
+        list-style: none;
+        padding: 34px 24px;
+        font-family: 'Bebas Neue';
+    }
+    h3{
+        font-size: 3rem;
+        margin: 5px;
+        padding: 5px;
+    }
+p{
+    text-align: center;
+    padding: 0px;
+}
+</style>
+<body> 
+    <header>
+    <nav class="navbar"> 
+        <ul class="navigation">
+            <li class="item" id="item1">HOME</li>
+            <li class="item" id="item2">ABOUT</li>
+            <li class="item" id="item3">SERVICES</li>
+            <li class="item" id="item4">CONTACT</li>
+        </ul>
+    </nav>
+</header>
+        <section> 
+            <h3>Welcome to my website</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
+        </section>
+    <hr> <!-- for horizontal line  -->
+</body>
+</html>

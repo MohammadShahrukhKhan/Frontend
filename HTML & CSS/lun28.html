@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 21px 12px;
+        /* border: 2px solid red; */
+        margin: 23px 12px;
+        /* box-shadow: -10px 10px 10px 16px rgb(15, 126, 230); */
+        /* to change the direction of the shadow add negatives or positives */
+        /* the third value is to adjust the blurr radius  */
+        /* the third value is to adjust the spread radius  */
+        background: rgb(243, 124, 13);
+        box-shadow: inset 5px 5px 10px green;
+        /* this is used to give shadow inside the box  */
+        box-shadow: 3px 15px blueviolet, 10px 16px rgb(185, 60, 81) ;
+        /* this is used to give multiple shadows  */
+    }
+    .card h2{
+        text-shadow: 3px 3px 10px green;
+    }
+</style>
+<body>
+    <div class="container">
+    <div class="card" id="c1"><h2>This is a c++ course</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Eligendi ea animi labore adipisci minima reiciendis obcaecati 
+        ratione eveniet ipsam reprehenderit 
+        saepe alias asperiores eius ipsa, itaque,
+         modi minus corrupti, illum necessitatibus nam iste! Minima.
+    </p>
+</div>
+    <div class="card" id="c2"><h2>This is an HTML course</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Eligendi ea animi labore adipisci minima reiciendis obcaecati 
+            ratione eveniet ipsam reprehenderit 
+            saepe alias asperiores eius ipsa, itaque,
+             modi minus corrupti, illum necessitatibus nam iste! Minima.
+        </p>
+    </div>
+    <div class="card" id="c3"><h2>This is a python course</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Eligendi ea animi labore adipisci minima reiciendis obcaecati 
+            ratione eveniet ipsam reprehenderit 
+            saepe alias asperiores eius ipsa, itaque,
+             modi minus corrupti, illum necessitatibus nam iste! Minima.
+        </p>
+    </div>
+</div>
+    <!-- <div class="container" id="card4"></div> -->
+</body>
+</html>

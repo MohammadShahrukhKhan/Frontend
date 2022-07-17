@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position: absolute, relative, fixed and sticky</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            margin: 3px;
+            height: 100px;
+            width: 150px;
+            display: inline-block;
+        }
+
+        /* absolute: changes position relative to it's first parent and does not leave a space over original position */
+        /* relative: changes position relative to it's original position and leaves a gap over there */
+        /* fixed: positions the element relative to the browser window */ 
+        /* sticky: positioned at it's original place in such a way that it is sticked to it  */
+
+        #box556{
+            position: sticky;
+            top: 11px;
+
+        }
+        .container{
+            border: black;
+            height: 1500px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box555">one</div>
+    <div class="box" id="box13">two</div>
+    <div class="box" id="box556">three</div>
+    <div class="box" id="box69">four</div>
+</div>
+</body>
+</html>

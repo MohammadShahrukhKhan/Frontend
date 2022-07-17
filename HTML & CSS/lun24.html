@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Media Queries </title>
+    <style>
+    .box{
+        text-align: center;
+        color: seashell;
+        background-color: teal;
+        font-size: 22px;
+        display: none;
+    }
+    /* only screen means,it will support only screen media */
+    @media only screen and (max-width:333px)
+    {
+        #box1{
+            display: block;
+        }
+    }
+
+    @media  only screen and (max-width:555px) and (min-width:333px) 
+    {
+        #box2{
+            display: block;
+        }
+    }
+
+    @media only screen and (max-width:888px) and (min-width:555px) 
+    {
+        #box3{
+            display: block;
+        }
+    }
+    @media only screen and (max-width:999px) and (min-width:888px) 
+    { 
+        #box4{
+            display: block;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">iphone</div>
+    <div class="box" id="box2">ipad</div>
+    <div class="box" id="box3">macbook</div>
+    <div class="box" id="box4">imac</div>
+    
+</body>
+</html>

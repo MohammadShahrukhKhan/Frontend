@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is HTML forms Tutorial</h2>
+    <form action="backend.php">
+        <label for="name"> Name</label>
+       <div> <input type="text" name="myName" id="name">
+       </div>
+       <br>
+        <div>
+        Designation: <input type="text" name="myRole">
+    </div>
+    <br>
+    <div>
+       Email: <input type="email" name="myEmail" id="">
+    </div>
+    <br>
+    <div>
+       Employment ID: <input type="number" name="myNumber" id="">
+    </div>
+    <br>
+    <div>
+I agree with the terms and conditions: <input type="checkbox" name="Agreement" checked id="">
+    </div>
+    <br>
+   D.O.B: <input type="date" name="myDate" id="">
+   <br>
+    <div>
+      Describe Yourself: <br> <textarea name="myText" id="" cols="30" rows="10"></textarea>
+    </div>
+    <br>
+   <div> <label for="vehicle"> Vehicle</label>
+     <select name="myVehicle" id="vehicle">
+          <option value="None"selected> None</option>  
+        <option value="twoWheeler"> Two Wheeler</option>
+            <option value="fourWheeler"> Four Wheeler</optiion>
+            </select>
+        </div>
+        <br>
+    <div>
+        <input type="submit" value="Submit Now">
+    </div>
+    <br>
+    <div>
+        <input type="reset" value="Clear">
+    </div>
+    </form>
+</body>
+</html>

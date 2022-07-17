@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors & more designing</title>
+</head>
+<style>
+    a{
+        text-decoration: none; 
+        /* none removes the underline  */
+    }
+
+    a:hover{
+        color: yellow; 
+        /* changes color to yellow when the cursor is brought towards the link  */
+    }
+    /* for visited link  */
+    a:visited{
+color: tomato;
+    }
+    a:active{
+        color: turquoise;
+    }
+.container{
+    border: 2px solid black;
+    background: rgb(128, 187, 116);
+padding: 34px;
+margin: auto;
+font-family: Arial, Helvetica, sans-serif; font-weight: bold;
+width: 555px;
+}
+.Btn{
+    background-color: grey;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 9px;
+}
+</style>
+<body>
+    <div class="container" id="cont1">
+        <h1>Check out my Github</h1>
+        <p>Make sure to folllow me</p>
+        <a href="https://github.com/MohammadShahrukhKhan" class="Btn">Read More</a>
+        <button class="Btn"> Contact Us</button>
+    </div>
+</body>
+</html>
