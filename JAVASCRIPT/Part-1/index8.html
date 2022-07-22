@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: goldenrod;
+        }
+
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: rgb(5, 119, 39);
+            text-align: center;
+            color: aliceblue;
+            font-weight: bold;
+        }
+        #message-el {
+            font-style: italic;
+        }
+        button {
+            background: goldenrod;
+            color:rgb(5, 119, 39);
+            width: 150px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-weight: bold;
+            border: none;
+            border-radius: 2px;
+            margin-bottom: 2px;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Blackjack</h1>
+    <p id="message-el">Want to play a round ?</p>
+    <p id="cards-el">Cards:</p>
+    <p id="sum-el">Sum:</p>
+    <button onclick="startGame()">START GAME</button>
+    <br>
+    <button onclick="newCard()">NEW CARD</button>
+    <script>
+
+        let firstCard = 10
+        let secondCard = 4
+        let sum = firstCard + secondCard
+        let hasBlackJack = false 
+        let isAlive = true
+
+        let messageEl = document.getElementById("message-el")
+        console.log(messageEl)
+
+        let sumEl = document.getElementById("sum-el")
+        // let sumEl = document.querySelector("#sum-el") // Can also use querySeletor
+        console.log(sumEl)
+
+        let cardsEl = document.getElementById("cards-el")
+        console.log("cards-el")
+
+        function startGame() {
+
+            sumEl.textContent = `Sum: ${sum}`
+            cardsEl.textContent = `Cards: ${firstCard} & ${secondCard}`
+
+            if (sum <= 20) {
+                message = "Do you want to draw a new card?"
+            } else if (sum === 21) {
+                message = "You've got Blakjack!"
+                hasBlackJack = true
+            } else {
+                message = "You're out of the game!"
+                isAlive = false
+            }
+
+            messageEl.textContent = message
+
+        }
+
+        function newCard() {
+            console.log('Drawing a new card fro the deck!')
+
+            let card = 8
+            sum += card
+
+            startGame()
+        }
+    </script>
+</body>
+</html>

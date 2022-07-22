@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="apple-shelf"></div>
+    <div id="orange-shelf"></div>
+    <script>
+        let livingBeings = ['🐫', '🐢', '🐫', '🐫', '🐢']
+        appleShelf = document.getElementById('apple-shelf')
+        orangeShelf = document.getElementById('orange-shelf')
+
+        function sortLivingBeings() {
+            for (let i = 0; i < livingBeings.length; i++){
+                if (livingBeings[i] === '🐫'){
+                    appleShelf.textContent += '🐫'
+                }
+                else if (livingBeings[i] === '🐢'){
+                    orangeShelf.textContent += '🐢'
+                }
+            }
+        }
+
+        sortLivingBeings()
+    </script>
+</body>
+</html>
