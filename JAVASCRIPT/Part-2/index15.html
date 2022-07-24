@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            text-align: center;
+        }
+        #container{
+            margin-top: 30px;
+        }
+
+        #container button{
+            background: lightcoral;
+            border: none;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+
+        #container p{
+            font-family: sans-serif;
+        }
+
+    </style>
+    <div id="container"></div>
+    <script>
+        const container = document.getElementById('container')
+        container.innerHTML = `<button onclick='buy()'>BUY!</button>`
+        function buy(){
+            container.innerHTML += '<p>Thanks for Shopping</p>' // use '+=' so that button and paragraph do not overlap
+        }
+    </script>
+</body>
+</html>
