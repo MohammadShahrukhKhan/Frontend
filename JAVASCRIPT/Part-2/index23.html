@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="greeting-el"></p>
+    <script>
+        let sentence = ['Hey', 'my', 'name', 'is', 'shahrukh']
+        let greetingEl = document.getElementById("greeting-el")
+
+        for (i= 0; i < sentence.length; i++){
+        }
+
+        (function loop() {
+            sentence.length && (greetingEl.textContent += ' ' + sentence.shift(), setTimeout(loop, 1000));
+        })();
+
+        // setTimeout(() => {
+        //     greetingEl.textContent += ` ${sentence[0]}`
+        // }, 1000);
+
+        // setTimeout(() => {
+        //     greetingEl.textContent += ` ${sentence[1]}`
+        // }, 2000);
+
+        // setTimeout(() => {
+        //     greetingEl.textContent += ` ${sentence[2]}`
+        // }, 3000);
+
+        // setTimeout(() => {
+        //     greetingEl.textContent += ` ${sentence[3]}`
+        // }, 4000);
+
+        // setTimeout(() => {
+        //     greetingEl.textContent += ` ${sentence[4]}`
+        // }, 5000);
+    </script>
+</body>
+</html>
