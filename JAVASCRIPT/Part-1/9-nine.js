@@ -1,4 +1,4 @@
-let a = 2
+let a 
 let b = 1
 
 function ab(){
@@ -12,7 +12,7 @@ function ab(){
         return a==b
     }
     else{
-        return '😊'
+        return 'Hey! "a" is not assigned 😊' //the emoji might not be visible in some terminals...
     }
 }
 
