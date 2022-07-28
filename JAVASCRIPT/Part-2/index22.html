@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <input type="text" placeholder="v1" id="v1">
+    <br>
+    <input type="text" placeholder="v2" id="v2">
+    <br>
+    <span id="result"></span>
+    <br>
+    <button id="sum" onclick="sum()">+</button>
+    <button id="sub" onclick="sub()">-</button>
+    <button id="mul" onclick="mul()">*</button>
+    <button id="div" onclick="div()">/</button>
+
+    <script>
+        const v1 = document.getElementById('v1')
+        const v2 = document.getElementById('v2')
+        let result = document.getElementById('result')
+
+        function sum(){
+            result.innerText = parseInt(v1.value) + parseInt(v2.value)
+            console.log('The sum is: ' + (parseInt(v1.value) + parseInt(v2.value)))
+        }
+        function sub(){
+            result.innerText = parseInt(v1.value) - parseInt(v2.value)
+            console.log('The substraction is: ' + (parseInt(v1.value) - parseInt(v2.value)))
+        }
+        function mul(){
+            result.innerText = parseInt(v1.value) * parseInt(v2.value)
+            console.log('The multiplication is: ' + (parseInt(v1.value) * parseInt(v2.value)))
+        }
+        function div(){
+            result.innerText = parseInt(v1.value) / parseInt(v2.value)
+            console.log('The division is: ' + (parseInt(v1.value) / parseInt(v2.value)))
+        }
+    </script>
+</body>
+</html>
